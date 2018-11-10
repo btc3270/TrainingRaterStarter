@@ -1,13 +1,20 @@
 import { Component } from '@angular/core';
+import {Trsmiles} from './trsmiles.service';
 
 @Component({
   selector: 'app-root',
-  templateUrl: './app.component.html',
-  styleUrls: ['./app.component.less']
+  template: '<h1> </h1>',
+  styleUrls: ['./app.component.less'],
+  providers: [Trsmiles]
 })
+
 export class AppComponent {
   isNavbarCollapsed = false;
 
-  constructor() {
+users: 'Iuser[]';
+private trsmiles: Trsmiles;
+
+constructor(trsmiles: Trsmiles) {
+    this.trsmiles = trsmiles;
   }
 }
