@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import {Trsmiles} from './trsmiles.service';
+import {Trsmiles} from './Trsmiles.service';
 
 @Component({
   selector: 'app-root',
